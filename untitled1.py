@@ -13,4 +13,7 @@ plt.figure() #creates a new figure
 plt.title('marks obtained plotted against number of study hours')
 plt.xlabel('study hours')
 plt.ylabel('marks in 100')
-plt.plot(x,y,'k.')
+plt.plot(x,y,'bo')
+plt.axis([0,10,0,100])
+plt.grid(True)
+plt.show()
