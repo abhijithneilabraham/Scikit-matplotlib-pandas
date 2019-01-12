@@ -14,6 +14,10 @@ plt.title('marks obtained plotted against number of study hours')
 plt.xlabel('study hours')
 plt.ylabel('marks in 100')
 plt.plot(x,y,'bo')
-plt.axis([0,10,0,100])
+plt.axis([0,10,0,100]) #the maximum value in x axis and y axis
 plt.grid(True)
 plt.show()
+from sklearn.linear_model import LinearRegression
+model=LinearRegression()
+model.fit(x,y)
+print("a student who studied 4hours will get %.2f",model.predict([[7]]))
