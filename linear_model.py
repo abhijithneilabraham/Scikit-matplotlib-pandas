@@ -20,4 +20,7 @@ plt.show()
 from sklearn.linear_model import LinearRegression
 model=LinearRegression()
 model.fit(x,y)
-print("a student who studied 4hours will get %.2f",model.predict([[4]]))
+b=model.predict([[4]])
+c=b[0][0]
+d='{:.3f}'.format(c)
+print("a student who studied 4hours will get",d)
